@@ -1,0 +1,1092 @@
+   2860 pts/0    00:00:00 bash
+   3312 pts/0    00:00:00 ps
+user@deepu:~/dir$ ps-dir
+ps-dir: command not found
+user@deepu:~/dir$ ps-ls
+ps-ls: command not found
+user@deepu:~/dir$ ps-lm
+ps-lm: command not found
+user@deepu:~/dir$ ps -lm
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 -  1000    2860    2852  0   -   - -  2687 -      pts/0    00:00:00 bash
+0 S  1000       -       -  0  80   0 -     - do_wai -        00:00:00 -
+0 -  1000    3356    2860  0   -   - -  2854 -      pts/0    00:00:00 ps
+0 R  1000       -       -  0  80   0 -     - -      -        00:00:00 -
+user@deepu:~/dir$ ps -dir
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+user@deepu:~/dir$ top
+
+top - 03:29:28 up 37 min,  1 user,  load average: 0.10, 0.09, 0.11
+Tasks: 220 total,   2 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us, 10.0 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7730.2 total,   5515.6 free,   1037.7 used,   1176.9 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6267.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                             
+    357 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop10                                                                                                                              
+    358 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/171-mei_me                                                                                                                      
+    365 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop11                                                                                                                              
+    367 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cfg80211                                                                                                                            
+    368 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/172-iwlwifi                                                                                                                     
+    373 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/173-iwlwifi                                                                                                                     
+    375 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd                                                                                                                              
+    376 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/174-iwlwifi                                                                                                                     
+    378 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/175-iwlwifi                                                                                                                     
+    380 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/176-iwlwifi                                                                                                                     
+    381 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 irq/177-iwlwifi                                                                                                                     
+    383 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop12                                                                                                                              
+    391 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop13                                                                                                                              
+    419 root       0 -20       0      0      0 S   0.0   0.0   0:00.00 loop14                                                                                                                              
+    424 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 card0-crtc0                                                                                                                         
+    426 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 card0-crtc1                                                                                                                         
+    428 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 card0-crtc2                                                                                                                         
+    431 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 card0-crtc3                                                                                                                         
+    445 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmemstick                                                                                                                           
+    450 root       0 -20       0      0      0 I   0.0   0.0   0:00.01 kworker/u9:2-hci0                                                                                                                   
+    609 systemd+  20   0   23868  11788   7864 S   0.0   0.1   0:00.05 systemd-resolve                                                                                                                     
+    640 root      20   0  243248  10708   8224 S   0.0   0.1   0:00.12 accounts-daemon                                                                                                                     
+    641 root      20   0    2548    700    636 S   0.0   0.0   0:00.42 acpid                                                                                                                               
+    643 avahi     20   0    8536   3368   3048 S   0.0   0.0   0:00.03 avahi-daemon                                                                                                                        
+    644 root      20   0    8428   5016   4464 S   0.0   0.1   0:00.02 bluetoothd                                                                                                                          
+    645 root      20   0    9420   2812   2608 S   0.0   0.0   0:00.00 cron                                                                                                                                
+    646 root      20   0   28568   8904   7128 S   0.0   0.1   0:00.01 cupsd                                                                                                                               
+    647 message+  20   0    9900   6364   3804 S   0.0   0.1   0:00.72 dbus-daemon                                                                                                                         
+    649 root      20   0  265456  21756  18080 S   0.0   0.3   0:00.39 NetworkManager                                                                                                                      
+    657 root      20   0   81968   3668   3384 S   0.0   0.0   0:00.13 irqbalance                                                                                                                          
+    659 root      20   0   39324  20044  11808 S   0.0   0.3   0:00.07 networkd-dispat                                                                                                                     
+    665 root      20   0  244952  14500   9240 S   0.0   0.2   0:01.34 polkitd                                                                                                                             
+    668 syslog    20   0  224528   5188   3860 S   0.0   0.1   0:00.13 rsyslogd                                                                                                                            
+    672 root      20   0 1466780  28460  18800 S   0.0   0.4   0:00.96 snapd                                                                                                                               
+    677 root      20   0  235600   6084   5524 S   0.0   0.1   0:00.00 switcheroo-cont                                                                                                                     
+    679 root      20   0   16740   8116   7040 S   0.0   0.1   0:00.09 systemd-logind                                                                                                                      
+    683 root      20   0  273756  10664   9664 S   0.0   0.1   0:01.70 thermald                                                                                                                            
+    685 root      20   0  395548  14088  11756 S   0.0   0.2   0:00.04 udisksd                                                                                                                             
+    686 root      20   0   13684   4864   4276 S   0.0   0.1   0:00.01 wpa_supplicant                                                                                                                      
+    689 avahi     20   0    8348    320      0 S   0.0   0.0   0:00.00 avahi-daemon                                                                                                                        
+    726 root      20   0  178336  11588  10096 S   0.0   0.1   0:00.02 cups-browsed                                                                                                                        
+    732 root      20   0  314464  10940   9212 S   0.0   0.1   0:00.05 ModemManager                                                                                                                        
+    733 root      20   0  244564  11844   8872 S   0.0   0.1   0:00.12 boltd                                                                                                                               
+    778 root      20   0  239612   8540   7348 S   0.0   0.1   0:00.02 gdm3                                                                                                                                
+    799 mysql     20   0 2081692 408832  33592 S   0.0   5.2   0:16.38 mysqld                                                                                                                              
+    806 root      20   0  118128  22824  14684 S   0.0   0.3   0:00.03 unattended-upgr                                                                                                                     
+    876 rtkit     21   1  152936   3000   2764 S   0.0   0.0   0:00.03 rtkit-daemon                                                                                                                        
+    877 root      20   0  252756  10352   8540 S   0.0   0.1   0:00.17 upowerd                                                                                                                             
+[1]+  Stopped                 top
+user@deepu:~/dir$ xterm
+
+Command 'xterm' not found, but can be installed with:
+
+sudo apt install xterm
+
+user@deepu:~/dir$ history
+ 1046  javac ebookstall.java
+ 1047  java ebookstall
+ 1048  javac hello.java
+ 1049  java test;
+ 1050  javac hello.java
+ 1051  java test;
+ 1052  javac hello.java
+ 1053  java test;
+ 1054  javac hello.java
+ 1055  java test;
+ 1056  javac hello.java
+ 1057  java test;
+ 1058  javac hello.java
+ 1059  java test;
+ 1060  javac hello.java
+ 1061  java test
+ 1062  javac hello.java
+ 1063  java test
+ 1064  javac hello.java
+ 1065  java test
+ 1066  javac hello.java
+ 1067  java test
+ 1068  javac hello.java
+ 1069  java test
+ 1070  javac hello.java
+ 1071  java test
+ 1072  javac hello.java
+ 1073  java test
+ 1074  javac hello.java
+ 1075  java test
+ 1076  javac hello.java
+ 1077  java test
+ 1078  javac hello.java
+ 1079  java test
+ 1080  javac hello.java
+ 1081  java test
+ 1082  javac hello.java
+ 1083  java test
+ 1084  javac hello.java
+ 1085  java test
+ 1086  javac hello.java
+ 1087  java test
+ 1088  javac hello.java
+ 1089  java test
+ 1090  javac hello.java
+ 1091  java test
+ 1092  javac hello.java
+ 1093  java test
+ 1094  javac hello.java
+ 1095  java test
+ 1096  javac hello.java
+ 1097  java test
+ 1098  javac hello.java
+ 1099  java test
+ 1100  javac hello.java
+ 1101  java test
+ 1102  javac hello.java
+ 1103  java test
+ 1104  javac hello.java
+ 1105  java test
+ 1106  javac hello.java
+ 1107  java test1;
+ 1108  javac hello.java
+ 1109  java test1;
+ 1110  javac hello.java
+ 1111  java test1;
+ 1112  javac hello.java
+ 1113  java test;
+ 1114  javac hello.java
+ 1115  java test;
+ 1116  javac hello.java
+ 1117  java test;
+ 1118  javac hello.java
+ 1119  java test;
+ 1120  javac hello.java
+ 1121  java test;
+ 1122  javac hello.java
+ 1123  java test;
+ 1124  javac hello.java
+ 1125  java test;
+ 1126  javac hello.java
+ 1127  java test
+ 1128  javac hello.java
+ 1129  java test
+ 1130  javac hello.java
+ 1131  java test
+ 1132  javac hello.java
+ 1133  java test
+ 1134  javac hello.java
+ 1135  java test
+ 1136  javac hello.java
+ 1137  java test
+ 1138  javac hello.java
+ 1139  java test
+ 1140  javac hello.java
+ 1141  java test
+ 1142  cd week5
+ 1143  javac valobj.java
+ 1144  java test;
+ 1145  javac valobj.java
+ 1146  javac hello.java
+ 1147  java test;
+ 1148  javac hello.java
+ 1149  java test;
+ 1150  javac hello.java
+ 1151  java test;
+ 1152  javac hello.java
+ 1153  java test;
+ 1154  javac hello.java
+ 1155  java test;
+ 1156  javac hello.java
+ 1157  java test;
+ 1158  javac hello.java
+ 1159  java test;
+ 1160  javac hello.java
+ 1161  java test;
+ 1162  javac hello.java
+ 1163  java test;
+ 1164  javac hello.java
+ 1165  java test;
+ 1166  javac hello.java
+ 1167  java test;
+ 1168  javac hello.java
+ 1169  java payable.java
+ 1170  javac payable.java
+ 1171  java test;
+ 1172  javac payable.java
+ 1173  javac vehicle.java
+ 1174  java test;
+ 1175  javac vehicle.java
+ 1176  javac fare.java
+ 1177  javac Fare.java
+ 1178  java TEST;
+ 1179  java test;
+ 1180  javac Fare.java
+ 1181  javac s.java
+ 1182  java test;
+ 1183  javac s.java
+ 1184  java test;
+ 1185  javac s.java
+ 1186  java test;
+ 1187  javac - d.a.java
+ 1188  javac -d . a.java
+ 1189  javac -d . b.java
+ 1190  java  -d .main.java
+ 1191  java main;
+ 1192  java -d .main.java
+ 1193  java main;
+ 1194  java -d . mai.java
+ 1195  java -d . a.java
+ 1196  javac -d . a.java
+ 1197  javac -d . b.java
+ 1198  javac -d . mai.java
+ 1199  java mai;
+ 1200  javac -d . sq.java
+ 1201  javac -d . cir.java
+ 1202  javac -d . main.java
+ 1203  java main;
+ 1204  javac -d . j.java
+ 1205  javac -d . d.java
+ 1206  java main1
+ 1207  java -d . main1.java
+ 1208  java -d . m.java
+ 1209  javac -d . j.java
+ 1210  javac -j . d.java
+ 1211  javac -d . d.java
+ 1212  javac -d . m.java
+ 1213  java m;
+ 1214  javac r.java
+ 1215  java Roots;
+ 1216  javac r.java
+ 1217  java Roots;
+ 1218  cd Desktop
+ 1219  cd #c
+ 1220  cd PPSLAB
+ 1221  cd #c
+ 1222  cd PPSLAB WEEK7
+ 1223  cd Desktop/#c/PPSLAB WEEK7
+ 1224  gcc multiply
+ 1225  gcc multiply.c
+ 1226  ./a.out
+ 1227  gcc dd.c
+ 1228  gcc multiply.c
+ 1229  ./a.out
+ 1230  javac mul.java
+ 1231  java test
+ 1232  javac mul.java
+ 1233  java test
+ 1234  javac mul.java
+ 1235  java test
+ 1236  javac mul.java
+ 1237  java test
+ 1238  gcc q.c
+ 1239  javac roots.java
+ 1240  java test
+ 1241  javac roots.java
+ 1242  java test
+ 1243  javac roots.java
+ 1244  java test
+ 1245  javac roots.java
+ 1246  java test
+ 1247  gcc roots.c
+ 1248  gcc mul.c
+ 1249  ./a.out
+ 1250  gcc mul.c
+ 1251  ./a.out
+ 1252  gcc mul.c
+ 1253  ./a.out
+ 1254  javac big.java
+ 1255  java test
+ 1256  javac big.java
+ 1257  java test
+ 1258  javac big.java
+ 1259  java test
+ 1260  javac big.java
+ 1261  java test;
+ 1262  javac big.java
+ 1263  java test;
+ 1264  javac big.java
+ 1265  java test;
+ 1266  javac big.java
+ 1267  java test;
+ 1268  javac big.java
+ 1269  java test;
+ 1270  cd week3
+ 1271  javac dice.java
+ 1272  java Rand
+ 1273  javac dice.java
+ 1274  java Rand
+ 1275  javac dyce.java
+ 1276  java dyce
+ 1277  javac dice.java
+ 1278  java rand;
+ 1279  javac dice.java
+ 1280  java rand;
+ 1281  javac dice.java
+ 1282  java rand;
+ 1283  javac dice.java
+ 1284  java rand;
+ 1285  javac dice.java
+ 1286  java rand;
+ 1287  javac dice.java
+ 1288  java rand;
+ 1289  javac dice.java
+ 1290  java rand;
+ 1291  javac dice.java
+ 1292  java rand;
+ 1293  javac dice.java
+ 1294  java rand;
+ 1295  javac dice.java
+ 1296  java rand;
+ 1297  javac dice.java
+ 1298  java rand;
+ 1299  javac dice.java
+ 1300  java rand;
+ 1301  javac dice.java
+ 1302  java rand;
+ 1303  javac dyce.java
+ 1304  javac dice.java
+ 1305  java test;
+ 1306  javac book.java
+ 1307  java test;
+ 1308  javac book.java
+ 1309  java test;
+ 1310  javac wrapper.java
+ 1311  cd week5
+ 1312  javac wrapper.java
+ 1313  java wrapper;
+ 1314  javac -d . aunt.java
+ 1315  javac -d . uncle.java
+ 1316  javac -d . aunt.java
+ 1317  javac -d . uncle.java
+ 1318  java uncle
+ 1319  javac deepu.java
+ 1320  java deepu
+ 1321  javac deepu.java
+ 1322  java deepu
+ 1323  javac deepu.java
+ 1324  java deepu
+ 1325  javac try.java
+ 1326  javac prac.java
+ 1327  javac deepu.java
+ 1328  java deepu;
+ 1329  javac deepu.java
+ 1330  java deepu;
+ 1331  javac deepu.java
+ 1332  java deepu;
+ 1333  javac deepu.java
+ 1334  javac prac.java
+ 1335  javac deepu.java
+ 1336  java deepu;
+ 1337  javac deepu.java
+ 1338  java deepu;
+ 1339  javac deepu.java
+ 1340  java deepu;
+ 1341  javac deepu.java
+ 1342  java deepu;
+ 1343  javac deepu.java
+ 1344  java deepu;
+ 1345  javac deepu.java
+ 1346  java deepu;
+ 1347  javac deepu.java
+ 1348  java deepu;
+ 1349  javac deepu.java
+ 1350  java deepu;
+ 1351  javac deepu.java
+ 1352  java deepu
+ 1353  javac deepu.java
+ 1354  java deepu
+ 1355  javac deepu.java
+ 1356  java deepu
+ 1357  javac deepu.java
+ 1358  java deepu
+ 1359  javac deepu.java
+ 1360  java deepu
+ 1361  javac deepu.java
+ 1362  java deepu;
+ 1363  javac deepu.java
+ 1364  java deepu;
+ 1365  javac deepu.java
+ 1366  java deepu;
+ 1367  javac deepu.java
+ 1368  java deepu;
+ 1369  javac deepu.java
+ 1370  java deepu;
+ 1371  javac deepu.java
+ 1372  java deepu;
+ 1373  javac deepu.java
+ 1374  java deepu;
+ 1375  javac deepu.java
+ 1376  java deepu;
+ 1377  javac deepu.java
+ 1378  java deepu;
+ 1379  javac deepu.java
+ 1380  java deepu;
+ 1381  javac deepu.java
+ 1382  java deepu;
+ 1383  javac deepu.java
+ 1384  java test;
+ 1385  javac deepu.java
+ 1386  java test;
+ 1387  javac deepu.java
+ 1388  java test;
+ 1389  javac deepu.java
+ 1390  java test;
+ 1391  javac deepu.java
+ 1392  java test;
+ 1393  javac deepu.java
+ 1394  java deepu;
+ 1395  javac deepu.java
+ 1396  java deepu;
+ 1397  javac deepu.java
+ 1398  java deepu;
+ 1399  javac deepu.java
+ 1400  java deepu;
+ 1401  javac deepu.java
+ 1402  java deepu;
+ 1403  javac deepu.java
+ 1404  java deepu;
+ 1405  javac deepu.java
+ 1406  java deepu;
+ 1407  javac abdul.java
+ 1408  java abdul;
+ 1409  javac abdul.java
+ 1410  java abdul;
+ 1411  javac abdul.java
+ 1412  java abdul;
+ 1413  javac abdul.java
+ 1414  java abdul;
+ 1415  javac abdul.java
+ 1416  java abdul;
+ 1417  javac abdul.java
+ 1418  java abdul;
+ 1419  javac abdul.java
+ 1420  java abdul;
+ 1421  javac abdul.java
+ 1422  java abdul;
+ 1423  javac abdul.java
+ 1424  java abdul;
+ 1425  javac abdul.java
+ 1426  java abdul;
+ 1427  javac abdul.java
+ 1428  java abdul;
+ 1429  javac abdul.java
+ 1430  java abdul;
+ 1431  javac abdul.java
+ 1432  java abdul;
+ 1433  javac abdul.java
+ 1434  java abdul;
+ 1435  javac abdul.java
+ 1436  java abdul;
+ 1437  javac abdul.java
+ 1438  java abdul;
+ 1439  javac abdul.java
+ 1440  javac abdul.java
+ 1441  java abdul;
+ 1442  javac abdul.java
+ 1443  java abdul;
+ 1444  javac abdul.java
+ 1445  java abdul;
+ 1446  javac abdul.java
+ 1447  java abdul;
+ 1448  javac abdul.java
+ 1449  java abdul;
+ 1450  javac abdul.java
+ 1451  java abdul;
+ 1452  javac abdul.java
+ 1453  java abdul;
+ 1454  javac stack.java
+ 1455  javac arrayList
+ 1456  javac arrayList.java
+ 1457  java test;
+ 1458  javac arrayList.java
+ 1459  java test;
+ 1460  sudo mysql;
+ 1461  clear
+ 1462  sudo mysql;
+ 1463  clear;
+ 1464  sudo mysql;
+ 1465  clear
+ 1466  show databases;
+ 1467  clear;
+ 1468  sudo mysql;
+ 1469  clear;
+ 1470  sudo mysql;
+ 1471  javac first.java
+ 1472  java test;
+ 1473  javac first.java
+ 1474  java test;
+ 1475  javac first.java
+ 1476  java test;
+ 1477  javac first.java
+ 1478  java f.java
+ 1479  javac test.java
+ 1480  javac test..java
+ 1481  java test;
+ 1482  javac method.java
+ 1483  java test;
+ 1484  javac method.java
+ 1485  java test;
+ 1486  javac method.java
+ 1487  java test;
+ 1488  javac method.java
+ 1489  java test;
+ 1490  javac method.java
+ 1491  java test;
+ 1492  javac method.java
+ 1493  java test;
+ 1494  javac method.java
+ 1495  java test;
+ 1496  javac method.java
+ 1497  java test;
+ 1498  javac method.java
+ 1499  java test;
+ 1500  javac method.java
+ 1501  java test;
+ 1502  javac method.java
+ 1503  java test;
+ 1504  javac method.java
+ 1505  java test;
+ 1506  javac method.java
+ 1507  java test;
+ 1508  javac method.java
+ 1509  java test;
+ 1510  javac method.java
+ 1511  java test;
+ 1512  javac method.java
+ 1513  java test;
+ 1514  javac method.java
+ 1515  java test;
+ 1516  javac method.java
+ 1517  java test;
+ 1518  javac method.java
+ 1519  java test;
+ 1520  javac method.java
+ 1521  java test;
+ 1522  javac method.java
+ 1523  java test;
+ 1524  javac method.java
+ 1525  javac method.java
+ 1526  java test;
+ 1527  javac method.java
+ 1528  java test;
+ 1529  javac method.java
+ 1530  java test;
+ 1531  javac method.java
+ 1532  java test;
+ 1533  javac method.java
+ 1534  java test;
+ 1535  javac method.java
+ 1536  java test;
+ 1537  javac method.java
+ 1538  java test;
+ 1539  javac method.java
+ 1540  java test;
+ 1541  javac method.java
+ 1542  java test;
+ 1543  javac m.java
+ 1544  java test;
+ 1545  javac m.java
+ 1546  java test;
+ 1547  javac m.java
+ 1548  java test;
+ 1549  javac m.java
+ 1550  java test;
+ 1551  javac m.java
+ 1552  java test;
+ 1553  javac m.java
+ 1554  java test;
+ 1555  javac m.java
+ 1556  java test;
+ 1557  javac m.java
+ 1558  java test;
+ 1559  javac m.java
+ 1560  java test;
+ 1561  javac m.java
+ 1562  java test;
+ 1563  javac m.java
+ 1564  java test;
+ 1565  javac m.java
+ 1566  java test;
+ 1567  javac m.java
+ 1568  java test;
+ 1569  javac m.java
+ 1570  java test;
+ 1571  javac m.java
+ 1572  java test;
+ 1573  javac m.java
+ 1574  java test;
+ 1575  javac m.java
+ 1576  java test;
+ 1577  javac m.java
+ 1578  java test;
+ 1579  javac m.java
+ 1580  java test;
+ 1581  javac m.java
+ 1582  java test;
+ 1583  javac m.java
+ 1584  java test;
+ 1585  javac syn.java
+ 1586  java test;
+ 1587  javac syn.java
+ 1588  java test;
+ 1589  javac syn.java
+ 1590  java test;
+ 1591  javac syn.java
+ 1592  java test;
+ 1593  javac syn.java
+ 1594  java test;
+ 1595  javac atm.java
+ 1596  javac awt.java
+ 1597  java first;
+ 1598  javac awt.java
+ 1599  java first;
+ 1600  javac awt.java
+ 1601  java first;
+ 1602  javac awt.java
+ 1603  java first;
+ 1604  javac awtt.java
+ 1605  java first;
+ 1606  javac awtt.java
+ 1607  java first;
+ 1608  javac frame.java
+ 1609  java first;
+ 1610  javac awtt.java
+ 1611  javac label.java
+ 1612  javac awtt.java
+ 1613  javac label.java
+ 1614  java first;
+ 1615  javac label.java
+ 1616  java first;
+ 1617  javac awtt.java
+ 1618  javac label.java
+ 1619  java first;
+ 1620  javac label.java
+ 1621  java first;
+ 1622  javac iostreams.java
+ 1623  javac write.java
+ 1624  java test;
+ 1625  ;
+ 1626  javac write.java
+ 1627  ;
+ 1628  javac write.java
+ 1629  java test;
+ 1630  dir
+ 1631  type test;
+ 1632  dir
+ 1633  type write.java
+ 1634  type test.txt;
+ 1635  type text.txt;
+ 1636  dir
+ 1637  javac write.java
+ 1638  type test;
+ 1639  java test;
+ 1640  dir
+ 1641  type test.txt;
+ 1642  javac write.java
+ 1643  type test.txt;
+ 1644  javac out.java
+ 1645  java test;
+ 1646  javac out.java
+ 1647  java test;
+ 1648  javac out.java
+ 1649  java test;
+ 1650  javac byte.java
+ 1651  java test;
+ 1652  javac byte.java
+ 1653  java test;
+ 1654  javac byte.java
+ 1655  java test;
+ 1656  javac byte.java
+ 1657  java test;
+ 1658  test.txt;
+ 1659  files;
+ 1660  javac inter.java
+ 1661  java test;
+ 1662  javac inter.java
+ 1663  java test;
+ 1664  javac inter.java
+ 1665  java test;
+ 1666  javac teacher.java
+ 1667  javac inter.java
+ 1668  javac teacher.java
+ 1669  java test;
+ 1670  javac teacher.java
+ 1671  java test;
+ 1672  javac teacher.java
+ 1673  java test;
+ 1674  javac teacher.java
+ 1675  java test;
+ 1676  javac teacher.java
+ 1677  java test;
+ 1678  javac teacher.java
+ 1679  java test;
+ 1680  javac teacher.java
+ 1681  javac diff.java
+ 1682  java test;
+ 1683  javac diff.java
+ 1684  java test;
+ 1685  javac diff.java
+ 1686  java test;
+ 1687  javac diff.java
+ 1688  java test;
+ 1689  javac diff.java
+ 1690  java test;
+ 1691  javac s.java
+ 1692  java MultiCatch
+ 1693  java MultipleCatch
+ 1694  javac s.java
+ 1695  java MultipleCatch
+ 1696  javac s.java
+ 1697  java rethrow
+ 1698  javac s.java
+ 1699  java Throw
+ 1700  sudo mysql;
+ 1701  javac p.java
+ 1702  sudo mysql;
+ 1703  javac p.java
+ 1704  java p;
+ 1705  javac p.java
+ 1706  java p;
+ 1707  javac p.java
+ 1708  java p;
+ 1709  javac p.java
+ 1710  java p;
+ 1711  javac p.java
+ 1712  java p;
+ 1713  javac p.java
+ 1714  java p;
+ 1715  javac p.java
+ 1716  java p;
+ 1717  javac p.java
+ 1718  java p;
+ 1719  javac p.java
+ 1720  java p;
+ 1721  22
+ 1722  javac p.java
+ 1723  javac p.java
+ 1724  java p;
+ 1725  javac p.java
+ 1726  java p;
+ 1727  javac p.java
+ 1728  java p;
+ 1729  javac p.java
+ 1730  java p;
+ 1731  javac p.java
+ 1732  java p;
+ 1733  javac p.java
+ 1734  java p;
+ 1735  javac p.java
+ 1736  java p;
+ 1737  javac p.java
+ 1738  java p;
+ 1739  javac p.java
+ 1740  java p;
+ 1741  javac p.java
+ 1742  java p;
+ 1743  javac p.java
+ 1744  java p;
+ 1745  javac p.java
+ 1746  java p;
+ 1747  javac p.java
+ 1748  java p;
+ 1749  javac p.java
+ 1750  java p;
+ 1751  javac p.java
+ 1752  java p;
+ 1753  javac p.java
+ 1754  java p
+ 1755  javac p.java
+ 1756  java p;
+ 1757  javac p.java
+ 1758  java p;
+ 1759  javac p.java
+ 1760  java p;
+ 1761  javac p.java
+ 1762  java p;
+ 1763  javac p.java
+ 1764  java p;
+ 1765  1
+ 1766  2
+ 1767  javac p.java
+ 1768  java p 1 2 3 4 5
+ 1769  javac p.java
+ 1770  java P;
+ 1771  java p;
+ 1772  java P;
+ 1773  java p;
+ 1774  javac p.java
+ 1775  java p;
+ 1776  javac p.java
+ 1777  java p;
+ 1778  javac p.java
+ 1779  java p;
+ 1780  javac p.java;
+ 1781  java p;
+ 1782  javac p.java;
+ 1783  java p;
+ 1784  javac p.java;
+ 1785  java p;
+ 1786  cd week3
+ 1787  javac uniquee.java
+ 1788  java test;
+ 1789  javac uniquee.java
+ 1790  javac p.java
+ 1791  java p
+ 1792  javac p.java
+ 1793  java p
+ 1794  javac p.java
+ 1795  java p
+ 1796  javac p.java
+ 1797  java p
+ 1798  javac p.java
+ 1799  java p
+ 1800  javac p.java
+ 1801  java p
+ 1802  javac p.java
+ 1803  java p
+ 1804  javac p.java
+ 1805  java p
+ 1806  javac p.java
+ 1807  deepu
+ 1808  javac p.java
+ 1809  java p
+ 1810  javac p.java
+ 1811  java p
+ 1812  javac p.java
+ 1813  java p
+ 1814  deepika 
+ 1815  javac p.java
+ 1816  deepika 
+ 1817  javac p.java
+ 1818  java p
+ 1819  javac p.java
+ 1820  javac p
+ 1821  javac p.java
+ 1822  java p
+ 1823  javac p.java
+ 1824  java p
+ 1825  javac p.java
+ 1826  java p
+ 1827  javac p.java
+ 1828  java p
+ 1829  javac p.java
+ 1830  java test
+ 1831  javac p.java
+ 1832  javac p.java
+ 1833  java test;
+ 1834  javac p.java
+ 1835  java test;
+ 1836  javac p.java
+ 1837  java test;
+ 1838  javac p.java
+ 1839  java test;
+ 1840  javac p.java
+ 1841  java test;
+ 1842  javac p.java
+ 1843  java test
+ 1844  javac p.java
+ 1845  java test;
+ 1846  javac p.java
+ 1847  java test;
+ 1848  javac p.java
+ 1849  java test;
+ 1850  javac p.java
+ 1851  java test;
+ 1852  javac p.java
+ 1853  java test;
+ 1854  javac p.java
+ 1855  java test;
+ 1856  javac p.java
+ 1857  javac payable.java
+ 1858  java test;
+ 1859  java test;
+ 1860  java test;
+ 1861  javac p.java
+ 1862  java test;
+ 1863  javac p.java
+ 1864  java test;
+ 1865  javac p.java
+ 1866  java test;
+ 1867  javac - d . a.java
+ 1868  javac -d . a.java
+ 1869  javac -d . b.java
+ 1870  javac -d . f.java
+ 1871  javac -d . a.java
+ 1872  javac -d . a.java
+ 1873  javac -d . b.java
+ 1874  javac -d . f.java
+ 1875  javac -d . a.java
+ 1876  javac -d . b.java
+ 1877  javac -d . f.java
+ 1878  javac -d . a.java
+ 1879  javac -d . b.java
+ 1880  javac -d . f.java
+ 1881  java f;
+ 1882  javac Vehicle.java
+ 1883  java test;
+ 1884  javac payable.java
+ 1885  javac Vehicle.java
+ 1886  javac -d . square.java
+ 1887  javac -d . triangle.java
+ 1888  javac -d . f.java
+ 1889  javac -d . square.java
+ 1890  javac -d . triangle.java
+ 1891  javac -d . f.java
+ 1892  java f;
+ 1893  javac train.java
+ 1894  java ticket;
+ 1895  javac train.java
+ 1896  java ticket;
+ 1897  javac train.java
+ 1898  java ticket;
+ 1899  javac train.java
+ 1900  java ticket;
+ 1901  javac train.java
+ 1902  java ticket;
+ 1903  javac train.java
+ 1904  java ticket;
+ 1905  javac train.java
+ 1906  java ticket;
+ 1907  javac train.java
+ 1908  java ticket;
+ 1909  javac movie.java
+ 1910  java movie;
+ 1911  javac movie.java
+ 1912  java movie;
+ 1913  javac tra.java
+ 1914  java traffic
+ 1915  java t
+ 1916  javac tra.java
+ 1917  java t
+ 1918  javac tra.java
+ 1919  java t
+ 1920  javac tra.java
+ 1921  java t
+ 1922  javac thread.java
+ 1923  java t;
+ 1924  javac thread.java
+ 1925  java t;
+ 1926  javac f.java
+ 1927  java p;
+ 1928  javac exp.java
+ 1929  java main;
+ 1930  javac exp.java
+ 1931  java main;
+ 1932  javac exp.java
+ 1933  java m;
+ 1934  javac exp.java
+ 1935  java m;
+ 1936  javac exp.java
+ 1937  java m;
+ 1938  javac exp.java
+ 1939  java m;
+ 1940  sudo mysql;
+ 1941  javac third.java
+ 1942  java test;
+ 1943  javac third.java
+ 1944  java test;
+ 1945  javac third.java
+ 1946  java test;
+ 1947  javac third.java
+ 1948  java test;
+ 1949  javac third.java
+ 1950  java test;
+ 1951  javac third.java
+ 1952  java test;
+ 1953  1
+ 1954  javac third.java
+ 1955  java test;
+ 1956  javac third.java
+ 1957  java test;
+ 1958  javac third.java
+ 1959  java num;
+ 1960  javac third.java
+ 1961  java m;
+ 1962  javac third.java
+ 1963  java m;
+ 1964  cd oops lab
+ 1965  cd week3
+ 1966  javac ebookstall.java
+ 1967  java ebookstall
+ 1968  javac ebookstall.java
+ 1969  java ebookstall
+ 1970  sudo mysql;
+ 1971  sudo n=mysql;
+ 1972  clear
+ 1973  sudo mysql;
+ 1974  sudo mydql;
+ 1975  sudo mysql;
+ 1976  ls
+ 1977  cat kunal java
+ 1978  cat> file
+ 1979  ls
+ 1980  cat> file
+ 1981  ls
+ 1982  cat> file
+ 1983  ls
+ 1984  cat> file
+ 1985  cat filr
+ 1986  cat file
+ 1987  ls
+ 1988  cat> file
+ 1989  cat file
+ 1990  ls
+ 1991  cat> file
+ 1992  cat file
+ 1993  cp file file2
+ 1994  cat file
+ 1995  cat> file2
+ 1996  cat file2
+ 1997  cp file file2
+ 1998  cat file
+ 1999  cat flie2
+ 2000  cat file2
+ 2001  cat> file
+ 2002  cat file
+ 2003  cat> file2
+ 2004  cat file2
+ 2005  cp file file2
+ 2006  cat file2
+ 2007  mv file file2
+ 2008  cat file2
+ 2009  cat> file
+ 2010  mv file file2
+ 2011  cat file2
+ 2012  cat> file2
+ 2013  cat file2
+ 2014  mv file file2
+ 2015  rm file
+ 2016  rm file2
+ 2017  rm file
+ 2018  cat> file
+ 2019  cat> file2
+ 2020  mv file file2
+ 2021  cat file2
+ 2022  cat file
+ 2023  cat> file 
+ 2024  mkdir dir
+ 2025  cat dir
+ 2026  rmdir dir1
+ 2027  rmdir dir
+ 2028  cd dir
+ 2029  mkdir dir
+ 2030  cd dir
+ 2031  pwd
+ 2032  ps
+ 2033  ps-ef
+ 2034  ps
+ 2035  ps-file
+ 2036  ps-java
+ 2037  ps
+ 2038  ps-dir
+ 2039  ps-ls
+ 2040  ps-lm
+ 2041  ps -lm
+ 2042  ps -dir
+ 2043  top
+ 2044  xterm
+ 2045  history
+user@deepu:~/dir$ touch file file2
+

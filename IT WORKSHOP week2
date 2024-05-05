@@ -1,0 +1,109 @@
+user@deepu:~$  sort -M monthfile.txt
+January
+Febraury
+August
+NOvember
+user@deepu:~$ cat>numberfile.txt
+22
+0
+1
+444
+55555
+4
+user@deepu:~$ sort -n numberfile.txt
+0
+1
+4
+22
+444
+55555
+user@deepu:~$
+
+
+user@deepu:~$ cat>employee.txt
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000             
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000
+
+
+
+
+user@deepu:~$ awk '/manager/{print}' employee.txt
+ajay manager account 45000
+varun manager sales 50000
+amit manager account 47000
+
+
+user@deepu:~$ awk '/clerk/{print}' employee.txt
+sunil clerk account 25000
+deepak clerk sales 23000
+
+
+user@deepu:~$ awk '/peon/{print}' employee.txt
+tarun peon sales 15000
+sunil peon sales 13000
+
+
+
+
+ser@deepu:~$ cat>file.txt
+deepu 23000
+swetha 77000
+priya 340000
+user@deepu:~$ awk '/deepu/{print}' file.txt
+deepu 23000
+user@deepu:~$ awk '/swetha/{print}' file.txt
+swetha 77000
+user@deepu:~$ awk '/priya/{print}' file.txt
+priya 340000
+
+
+***ShutDown COMMAND
+shutdown -r now and -r 15:
+
+user@deepu:~$ cat>table.txt
+venky window id 4567
+Arun Storage id 2456
+Sagar Unix id 4357
+User Linux id 2456
+user@deepu:~$ 
+user@deepu:~$ awk '{print $1,$2}' table.txt
+venky window
+Arun Storage
+Sagar Unix
+User Linux
+user@deepu:~$ awk '{print $1,$3}' table.txt
+venky id
+Arun id
+Sagar id
+User id
+user@deepu:~$ awk '{print $2,$3}' table.txt
+window id
+Storage id
+Unix id
+Linux id
+user@deepu:~$ awk '{print $2}' table.txt
+window
+Storage
+Unix
+Linux
+user@deepu:~$ awk '{print $1}' table.txt
+venky
+Arun
+Sagar
+User
+user@deepu:~$ awk '{print $3}' table.txt
+id
+id
+id
+id
+user@deepu:~$ 
+
+
+
+
